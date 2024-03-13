@@ -49,7 +49,7 @@ class Media(Base):
 
     id = Column(Integer, primary_key=True)
     type = Column(String(250), nullable=True)
-    url = Column(Integer, ForeignKey('user.id'))
+    url = Column(String(500))
     post_id = Column(Integer, ForeignKey('post.id'))
 ## Draw from SQLAlchemy base
 try:
